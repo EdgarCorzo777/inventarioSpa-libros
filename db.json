@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Administrador"
+    },
+    {
+      "id": "2",
+      "username": "librarian",
+      "password": "lib123",
+      "role": "librarian",
+      "name": "Ana García"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "genre": "Novela",
+      "price": 28500,
+      "stock": 12,
+      "isbn": "978-0-06-088328-7",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "title": "El principito",
+      "author": "Antoine de Saint-Exupéry",
+      "genre": "Infantil",
+      "price": 15000,
+      "stock": 25,
+      "isbn": "978-0-15-601219-5",
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "3",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Distopía",
+      "price": 22000,
+      "stock": 3,
+      "isbn": "978-0-452-28423-4",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "4",
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "genre": "Clásico",
+      "price": 35000,
+      "stock": 0,
+      "isbn": "978-84-376-0494-7",
+      "createdAt": "2024-02-10"
+    },
+    {
+      "id": "5",
+      "title": "El alquimista",
+      "author": "Paulo Coelho",
+      "genre": "Ficción",
+      "price": 19000,
+      "stock": 18,
+      "isbn": "978-0-06-231500-7",
+      "createdAt": "2024-03-05"
+    }
+  ]
+}

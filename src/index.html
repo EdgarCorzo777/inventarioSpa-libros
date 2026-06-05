@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibroStock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================
+    NAVBAR - Solo visible cuando el usuario
+    está autenticado. Se muestra/oculta con JS.
+  ======================================== -->
+  <nav id="navbar" class="navbar hidden">
+    <div class="nav-brand">
+      <span class="nav-icon">📚</span>
+      <span class="nav-title">LibroStock</span>
+    </div>
+    <div class="nav-links">
+      <!-- data-route es el atributo que lee el router -->
+      <a href="#" data-route="dashboard" class="nav-link">Dashboard</a>
+      <a href="#" data-route="inventory" class="nav-link">Inventario</a>
+    </div>
+    <div class="nav-user">
+      <span id="nav-username" class="nav-username"></span>
+      <button id="btn-logout" class="btn-logout">Cerrar sesión</button>
+    </div>
+  </nav>
+
+  <!-- ========================================
+    APP - Aquí se inyectan todas las vistas.
+    El router cambia el innerHTML de este div
+    según la ruta activa.
+  ======================================== -->
+  <main id="app">
+    <!-- Las vistas se renderizan aquí dinámicamente -->
+    <div class="loading-screen">
+      <div class="spinner"></div>
+      <p>Cargando LibroStock...</p>
+    </div>
+  </main>
+
+  <!-- ========================================
+    SCRIPTS - Cargados en orden de dependencia:
+    primero los módulos base, luego app.js
+  ======================================== -->
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/views/login.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/inventory.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
